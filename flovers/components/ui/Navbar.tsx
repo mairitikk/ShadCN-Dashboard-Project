@@ -1,6 +1,11 @@
+import Link from "next/link"
+
 const Navbar = () => {
     return (
-        <div className=''>Navbar</div>
+        <nav className=''>
+            collapseButton
+           <Link href="/">Dashboard</Link>
+        </nav>
     )
 }
 export default Navbar
