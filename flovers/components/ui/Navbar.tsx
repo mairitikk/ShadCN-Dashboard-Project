@@ -1,8 +1,7 @@
 import Link from "next/link"
 import { Moon } from "lucide-react"
-import { AvatarFallback } from "@radix-ui/react-avatar"
-import { Avatar } from "@radix-ui/react-avatar"
-import { AvatarImage } from "@radix-ui/react-avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 const Navbar = () => {
     return (
@@ -14,7 +13,7 @@ const Navbar = () => {
             <Link href="/">Dashboard</Link>
                 <Moon></Moon>
                 <Avatar>
-  <AvatarImage src="https://github.com/shadcn.png" />
+  <AvatarImage src="https://avatars.githubusercontent.com/u/1486366" />
   <AvatarFallback>CN</AvatarFallback>
 </Avatar>
 
