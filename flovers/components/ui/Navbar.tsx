@@ -1,10 +1,25 @@
 import Link from "next/link"
+import { Moon } from "lucide-react"
+import { AvatarFallback } from "@radix-ui/react-avatar"
+import { Avatar } from "@radix-ui/react-avatar"
+import { AvatarImage } from "@radix-ui/react-avatar"
 
 const Navbar = () => {
     return (
-        <nav className=''>
+        <nav className='p-4 flex items-center justify-between'>
+            {/*LEFT*/}
             collapseButton
-           <Link href="/">Dashboard</Link>
+            {/*RIGHT*/}
+            <div className="flex items-center gap-4">
+            <Link href="/">Dashboard</Link>
+                <Moon></Moon>
+                <Avatar>
+  <AvatarImage src="https://github.com/shadcn.png" />
+  <AvatarFallback>CN</AvatarFallback>
+</Avatar>
+
+
+            </div>
         </nav>
     )
 }
