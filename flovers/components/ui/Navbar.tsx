@@ -42,7 +42,7 @@ const Navbar = () => {
                             <Settings className="h-[1.2rem] w-[1.2rem] mr-2"></Settings>
                             Settings
     </DropdownMenuItem>
-                        <DropdownMenuItem>
+                        <DropdownMenuItem variant="destructive">
                             <LogOut className="h-[1.2rem] w-[1.2rem] mr-2"></LogOut>
                             Logout</DropdownMenuItem>
     
