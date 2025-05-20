@@ -20,7 +20,7 @@ import { useTheme } from "next-themes"
 
 
 const Navbar = () => {
-    const { theme, setTheme } = useTheme();
+    const { setTheme } = useTheme();
     return (
         <nav className='p-4 flex items-center justify-between'>
             {/*LEFT*/}
