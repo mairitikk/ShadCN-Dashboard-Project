@@ -13,7 +13,7 @@ import {
 import { User } from "lucide-react"
 import { Settings } from "lucide-react"
 import { LogOut } from "lucide-react"
-import { Button } from "./button"
+import { Button } from "./ui/button"
 import { useTheme } from "next-themes"
 
 
