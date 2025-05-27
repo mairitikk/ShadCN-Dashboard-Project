@@ -1,6 +1,6 @@
 "use client"
 import { ChartContainer, type ChartConfig } from "@/components/ui/chart"
-import { BarChart } from "recharts"
+import { BarChart, CartesianGrid } from "recharts"
 import { Bar } from "recharts"
 
 const chartConfig = {
@@ -28,7 +28,8 @@ const AppBarChart = () => {
         <div className="">
             <h1>Total Revenue</h1>
              <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
-      <BarChart accessibilityLayer data={chartData}>
+                <BarChart accessibilityLayer data={chartData}>
+                     <CartesianGrid vertical={false} />
         <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
         <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
       </BarChart>
