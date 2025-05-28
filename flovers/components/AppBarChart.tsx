@@ -1,5 +1,5 @@
 "use client"
-import { ChartContainer, type ChartConfig } from "@/components/ui/chart"
+import { ChartContainer, ChartLegend, ChartLegendContent, ChartTooltip, ChartTooltipContent, type ChartConfig } from "@/components/ui/chart"
 import { BarChart, CartesianGrid, XAxis, YAxis } from "recharts"
 import { Bar } from "recharts"
 
@@ -10,7 +10,7 @@ const chartConfig = {
   },
   mobile: {
     label: "Mobile",
-    color: "var(--chart-2)",
+    color: "var(--chart-3)",
   },
 } satisfies ChartConfig
 
@@ -42,7 +42,9 @@ const AppBarChart = () => {
       tickMargin={10}
       axisLine={false}
       
-    />
+                    />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                        <ChartLegend content={<ChartLegendContent />} />
         <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
         <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
       </BarChart>
