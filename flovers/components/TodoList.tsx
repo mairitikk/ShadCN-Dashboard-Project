@@ -1,8 +1,11 @@
+import { ScrollArea } from "@radix-ui/react-scroll-area"
+
 const TodoList = () => {
     return (
         <div className="">
           Calender
-        {/*LIST*/}
+            {/*LIST*/}
+            <ScrollArea></ScrollArea>
         </div>
     )
 }
