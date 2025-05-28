@@ -6,11 +6,11 @@ import { Bar } from "recharts"
 const chartConfig = {
   desktop: {
     label: "Desktop",
-    color: "var(--chart-1)",
+    color: "var(--chart-5)",
   },
   mobile: {
     label: "Mobile",
-    color: "var(--chart-3)",
+    color: "var(--chart-1)",
   },
 } satisfies ChartConfig
 
@@ -23,7 +23,7 @@ const chartData = [
   { month: "June", desktop: 214, mobile: 140 },
 ]
 
-const AppBarChart = () => {
+const AppAreaChart = () => {
     return (
         <div className="">
             <h1 className="text-lg font-medium mb-6">Total Revenue</h1>
@@ -52,4 +52,4 @@ const AppBarChart = () => {
         </div>
     )
 }
-export default AppBarChart
+export default AppAreaChart
