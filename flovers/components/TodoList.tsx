@@ -5,7 +5,7 @@ const TodoList = () => {
         <div className="">
           Calender
             {/*LIST*/}
-            <ScrollArea></ScrollArea>
+            <ScrollArea className="max-h-[400px]"></ScrollArea>
         </div>
     )
 }
