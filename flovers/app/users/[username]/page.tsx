@@ -18,7 +18,12 @@ const SingleUserPage = () => {
     </BreadcrumbItem>
   </BreadcrumbList>
             </Breadcrumb>{/*Container*/}
-            <div className=""></div>
+            <div className="mt-4 flex flex-col xl:flex-row gap-8">
+                {/*left*/}
+                <div className=""></div>
+                {/*right*/}
+                <div className=""></div>
+            </div>
         </div>
         
 
