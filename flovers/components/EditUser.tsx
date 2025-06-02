@@ -124,6 +124,7 @@ const EditUser = () => {
               <FormField
                 control={form.control}
                 name="role"
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Role</FormLabel>

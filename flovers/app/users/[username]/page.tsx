@@ -163,7 +163,7 @@ const SingleUserPage = () => {
                 <AvatarImage src="https://avatars.githubusercontent.com/u/1486366" />
                 <AvatarFallback>JD</AvatarFallback>
               </Avatar>
-              <h1 className="text-xl font-semibold">John Doe</h1>
+              <h1 className="text-xl font-semibold">Mairi Tikk</h1>
             </div>
             <p className="text-sm text-muted-foreground">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
